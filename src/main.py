@@ -11,3 +11,5 @@ if __name__ == '__main__':
     comparison_result = df1.compare(df2, result_names=("archer", "app"))
     comparison_result.to_csv(OUTPUT_FILE_PATH, index=False)
     print(f"Report saved to {OUTPUT_FILE_PATH}")
+
+

@@ -8,7 +8,7 @@ def keep_primary_key_matching_records(df1, df2, primary_keys):
 
 def remove_leading_trailing_spaces(df1, df2):
     """
-    This function removes any leading or trailing spaces from all columns in both dataframes.
+    This functi on removes any leading or trailing spaces from all columns in both dataframes.
     """
     for col in df1.columns:
         if df1[col].dtype == 'object':

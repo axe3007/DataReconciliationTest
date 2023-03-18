@@ -4,7 +4,6 @@
       "KEEP_PRIMARY_KEY_MATCHING_RECORDS": {
 
         "primary_keys": ["primary_key_column"]
-
       }
     },
     {
