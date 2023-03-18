@@ -1,0 +1,6 @@
+primary_key_column,name,age,gender
+1,John,25,Male
+2,Jane,31,Female
+3,0Bob,40,.Male
+4,Alice,@35,Female
+6,Emily,29,Female

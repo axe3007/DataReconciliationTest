@@ -1,0 +1,42 @@
+{
+  "transformations": [
+    {
+      "KEEP_PRIMARY_KEY_MATCHING_RECORDS": {
+
+        "primary_keys": ["primary_key_column"]
+
+      }
+    },
+    {
+      "ADD_TRAILING_SPACE_TO_PRIMARY_KEY_RECORDS": {
+        "primary_keys": "primary_key_column"
+      }
+    },
+    {
+      "REMOVE_LEADING_TRAILING_SPACES": {}
+    },
+    {
+      "REMOVE_UNICODE_CHARACTERS": {}
+    },
+    {
+      "FORMAT_DATE": [
+        {
+          "from_format": "%d%M%Y",
+          "to_format": "%dd%MM%YY"
+        },
+        {
+          "from_format": "%d%M%Y",
+          "to_format": "%dd%MM%YY"
+        }
+      ]
+    },
+    {
+      "REMOVE_LEADING_TRAILING_DELIMITERS": {
+        "delimiters": [
+          ":",
+          ";"
+        ]
+      }
+    }
+  ]
+}
