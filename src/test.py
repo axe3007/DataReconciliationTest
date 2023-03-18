@@ -1,7 +1,7 @@
 import pandas as pd
 
-df2 = pd.read_csv(r'C:\Users\AkashR\Desktop\DataReconciliationTest\data\input\app.csv', dtype=object)
-df1 = pd.read_csv(r'C:\Users\AkashR\Desktop\DataReconciliationTest\data\input\archer.csv', dtype=object)
+df2 = pd.read_csv(r'/data/input/app.csv', dtype=object)
+df1 = pd.read_csv(r'/data/input/archer.csv', dtype=object)
 primary_keys = ["primary_key_column","name"]
 print(df1)
 print(df2)

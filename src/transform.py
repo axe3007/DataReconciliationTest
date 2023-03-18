@@ -2,13 +2,13 @@ import pandas as pd
 
 
 def keep_primary_key_matching_records(df1, df2, primary_keys):
-    df1 = pd.merge(df1, df2, on=primary_keys, how='inner', suffixes=('_left', '_right'))
-    print(df1)
-
+    df1 = df1[df1[primary_keys].isin(df2[primary_keys]).all(axis=1)]
+    df2 = df2[df2[primary_keys].isin(df1[primary_keys]).all(axis=1)]
+    return None
 
 def remove_leading_trailing_spaces(df1, df2):
     """
-    This functi on removes any leading or trailing spaces from all columns in both dataframes.
+    This function removes any leading or trailing spaces from all columns in both dataframes.
     """
     for col in df1.columns:
         if df1[col].dtype == 'object':
